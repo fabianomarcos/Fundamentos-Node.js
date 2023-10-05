@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
+   "engines": {
+    "node": "18.x"
+  }, "scripts": {
     "build": "tsc",
+    "start": "node dist/server.js",
     "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "test": "jest"
   },
